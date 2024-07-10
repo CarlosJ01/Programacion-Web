@@ -1,0 +1,13 @@
+	p{
+		font-size:30px;
+	}
+			
+	footer{
+		font-size:60px;
+	}
+	
+	*{
+		margin: 10px 20px 30px 40px;
+		padding: 0px;
+		border: 0px solid #000000;
+	}

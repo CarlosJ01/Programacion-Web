@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+		<meta name="description" content="Sistema de Administracion de Creditos Complementarios - Registo Credito"/>
+		<meta name="keywords" content="SACC"/>
+    <link rel="stylesheet" href="CSS/estiloBase.css">
+    <link rel="stylesheet" href="CSS/estiloFormulario.css">
+    <title>S.A.C.C</title>
+  </head>
+
+  <body>
+    <div id="agrupar">
+      <header id="cabecera">
+				<h1> Sistema de Administracion de Creditos Complementarios </h1>
+			</header>
+
+      <p id="Titulo">Registrar Credito Complementario</p>
+
+      <section id="seccion">
+        <form name="Registro Credito" method="post" action="">
+          <div class="campo">
+            <label for="descrip"> Descripcion: </label>
+            <select name="descrip" id="descrip">
+              <option value="1">Conferencias</option>
+              <option value="1">Deportes</option>
+              <option value="1">Musica</option>
+              <option value="1">Tutorias</option>
+              <option value="1">Circulo de Estudio</option>
+		        </select>
+          </div>
+
+          <div class="campo">
+            <label for="fchIni"> Fecha de Inicio: </label>
+            <input type="date" name="fchIni" id="fchIni"   >
+          </div>
+
+          <div class="campo">
+            <label for="fchFin"> Fecha de Fin: </label>
+            <input type="date" name="fchFin" id="fchFin"   >
+          </div>
+
+          <div class="campo">
+            <label for="valor"> Valor: </label>
+            <input type="text" name="valor" id="valor" value="1">
+          </div>
+
+          <div class="campo">
+            <input type="submit" name="subEvi" id="botonSubir" class="formButton" value="Subir Evidencia">
+          </div>
+
+          <div class="campo">
+            <input type="submit" name="subRet" id="botonSubir" class="formButton" value="Subir Ruticula">
+          </div>
+
+          <div class="campo">
+            <input type="submit" name="ini" id="boton" class="formButton" value="Enviar" formaction="Alumno.html">
+            <input type="reset" name="rgs" id="boton" class="formButton" value="Borrar">
+          </div>
+        </form>
+      </section>
+
+      <footer id="pie">
+				Instituto Tecnologico de Morelia - Ingenieria en Sistemas Computacionales - Programacion Web - Proyecto S.A.C.C &copy; 2019
+			</footer>
+    </div>
+  </body>
+
+</html>

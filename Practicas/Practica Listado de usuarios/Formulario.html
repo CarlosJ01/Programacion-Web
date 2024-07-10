@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" >
+		<title>	Contenedor	</title>
+		<link rel="stylesheet" href="estilos.css">
+		<script>
+			function validarEnviar(){
+				fecha=new Date(document.getElementById('fecha').value);
+				hoy=new Date();
+				resta = hoy.getTime() - fecha.getTime();
+				dieciocho=1000*60*60*24*365.6*18;
+				if(resta<dieciocho){
+					alert("Solo mayores de 18 años");
+					return false;
+				}
+
+				p1=document.getElementById('password').value;
+				p2=document.getElementById('rpassword').value;
+				if(p1!=p2){
+					alert("Las contraseñas no coinciden");
+					return false;
+				}
+
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+	<div id="principal">
+		<header id="cabecera">
+			<h1>Sistema de Finanzas Personales</h1>
+		</header>
+
+		<section id="seccion">
+    <header id="header_form"> Formulario para registrar un nuevo usuario</header>
+    <form action="guardarDatos.php" name="miformulario" id="miformulario" method="post" enctype="multipart/form-data" onsubmit="return validarEnviar()">
+        <div class="myField">
+            <label for="paterno"> Apellido Paterno: </label>
+            <input type="text" name="paterno" id="paterno"  placeholder="Apellido paterno">
+        </div>
+
+        <div class="myField">
+            <label for="materno"> Apellido Materno: </label>
+            <input type="text" name="materno" id="materno"  placeholder="Apellido materno">
+        </div>
+
+				<div class="myField">
+            <label for="nombre"> Nombre(s): </label>
+            <input type="text" name="nombre" id="nombre"  placeholder="Nombre"   >
+        </div>
+
+				<div class="myField">
+            <label for="fecha"> Fecha de Nacimiento: </label>
+            <input type="date" name="fecha" id="fecha"   >
+        </div>
+
+				<div class="myField">
+            <label for="telefono"> Telefono: </label>
+            <input type="text" name="telefono" id="telefono"  placeholder="Teléfono">
+        </div>
+
+				<div class="myField">
+            <label for="ocupacion"> Ocupación: </label>
+            <select name="ocupacion" id="ocupacion">
+							<option value="1">Empleado</option>
+							<option value="2">Independiente</option>
+							<option value="3">Gerente</option>
+							<option value="4">Jefe</option>
+							<option value="5">Nini</option>
+							<option value="6">Estudiante</option>
+					</select>
+        </div>
+
+        <div class="myField">
+            <label for="codigo"> Código Postal: </label>
+            <input pattern="[0-9]{5}" name="codigo" id="codigo"  placeholder="Código Postal">
+        </div>
+
+				<div class="myField">
+            <label for="correo"> Correo electrónico: </label>
+            <input type="email" name="correo" id="correo"  placeholder="Correo"
+                   >
+        </div>
+
+				<div class="myField">
+            <label for="password"> Password: </label>
+            <input type="password" name="password" id="password" placeholder="Nueva contraseña"  >
+        </div>
+
+				<div class="myField">
+            <label for="rpassword"> Reescribe Password: </label>
+            <input type="password" name="rpassword" id="rpassword" placeholder="Reescribe contraseña"  >
+        </div>
+
+				<div class="myField">
+						<label for="foto"> Subir fotografia: </label>
+            <input type="file" name="foto">
+        </div>
+
+				<div class="myField">
+            <label >  </label>
+            <input type="submit" class="formButton" value="Enviar" autofocus>
+						<input type="reset" class="formButton" value="Cancelar" >
+        </div>
+    	</form>
+		</section>
+	</div>
+	</body>
+</html>

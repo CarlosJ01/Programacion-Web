@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Este texto es el título del documento</title>
+    <style media="screen">
+      *{
+        margin: 5px;
+        padding: 0px;
+        border:  2px solid #000000;
+      }
+    </style>
+    <script src="metodos.js"></script>
+    <!--
+    function mostraralerta(){
+        alert('hizo clic!');
+      }
+    function hacerclic(){
+        document.getElementsByTagName('p')[1].onclick=mostraralerta;
+    }
+    window.onload=hacerclic;
+    -->
+  </head>
+  <body>
+    <div id="principal">
+      <p onclick="alert('hizo clic!')" mouse>Hacer Clic con JS en linea</p>
+      <p>hacer click con JS embebido</p>
+      <p>No puede hacer Clic</p>
+      <!--
+      <p onclick="alert('hizo clic!')" mouse>Hacer Clic</p>
+      <p onmouseover="alert('ahora esta ensima')" mouse>Encima</p>
+      <p>No puede hacer clic</p>
+      -->
+      </div>
+  </body>
+</html>

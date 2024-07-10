@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+		<meta name="description" content="Sistema de Administracion de Creditos Complementarios - Registo"/>
+		<meta name="keywords" content="SACC"/>
+    <link rel="stylesheet" href="CSS/estiloBase.css">
+    <link rel="stylesheet" href="CSS/estiloFormulario.css">
+    <title>S.A.C.C</title>
+  </head>
+
+  <body>
+    <div id="agrupar">
+      <header id="cabecera">
+				<h1> Sistema de Administracion de Creditos Complementarios </h1>
+			</header>
+
+      <p id="Titulo">Registo Nuevo Alumno</p>
+
+      <section id="seccion">
+        <form name="Registro" method="post" action="">
+          <div class="campo">
+            <label for="numCont"> Numero de Control: </label>
+            <input type="text" name="numCont" id="numCont" placeholder="Escribe Numero de Control">
+          </div>
+
+          <div class="campo">
+            <label for="nom"> Nombre(s): </label>
+            <input type="text" name="nom" id="nom"  placeholder="Nombre(s)"   >
+          </div>
+
+          <div class="campo">
+            <label for="apePate"> Apellido Paterno: </label>
+            <input type="text" name="apePate" id="apePate"  placeholder="Apellido Paterno">
+          </div>
+
+          <div class="campo">
+            <label for="apeMate"> Apellido Materno: </label>
+            <input type="text" name="apeMate" id="apeMate"  placeholder="Apellido Materno">
+          </div>
+
+          <div class="campo">
+            <label for="carrera"> Carrera: </label>
+            <select name="carrera" id="carrera">
+              <option value="1">ISC</option>
+              <option value="2">TICS</option>
+		        </select>
+          </div>
+
+          <div class="campo">
+            <label for="correo"> E-Mail: </label>
+            <input type="email" name="correo" id="correo"  placeholder="E-Mail">
+          </div>
+
+          <div class="campo">
+            <label for="numTel"> Numero Telefonico: </label>
+            <input type="tel" name="numTel" id="numTel"  placeholder="Numero Telefonico">
+          </div>
+
+          <div class="campo">
+            <input type="submit" name="subKar" id="botonSubir" class="formButton" value="Subir Kardex">
+          </div>
+
+          <div class="campo">
+            <input type="submit" name="ini" id="boton" class="formButton" value="Enviar" formaction="Alumno.html">
+            <input type="reset" name="rgs" id="boton" class="formButton" value="Borrar">
+          </div>
+        </form>
+      </section>
+
+      <footer id="pie">
+				Instituto Tecnologico de Morelia - Ingenieria en Sistemas Computacionales - Programacion Web - Proyecto S.A.C.C &copy; 2019
+			</footer>
+    </div>
+  </body>
+
+</html>

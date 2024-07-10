@@ -1,0 +1,36 @@
+<script>
+  function validarEnviar(){
+    p1=document.getElementById('nvoPass').value;
+    p2=document.getElementById('nvoPass2').value;
+    if(p1!=p2){
+      alert("Las contraseñas no coinciden");
+      return false;
+    }
+  return true;
+  }
+</script>
+
+<section id="seccion_autenticar">
+	<header id="header_form">Formulario para cambiar contraseña</header>
+	<form action="validarNuevoPassword.php" name="miformulario" id="miformulario" method="post" onsubmit="return validarEnviar()">
+    <div class="myField">
+      <label for="oldPass">Contraseña actual</label>
+      <input type="password" name="oldPass" value="">
+    </div>
+
+    <div class="myField">
+      <label for="nvoPass">Nueva constraseña</label>
+      <input type="password" name="nvoPass" id="nvoPass" value="">
+    </div>
+
+    <div class="myField">
+      <label for="nvoPass2">Repite nueva contraseña</label>
+      <input type="password" name="nvoPass2" id="nvoPass2" value="">
+    </div>
+
+		<div class="myField">
+			<label></label>
+			<input type="submit" class="formButton" value="Cambiar" autofocus>
+		</div>
+	</form>
+</section>

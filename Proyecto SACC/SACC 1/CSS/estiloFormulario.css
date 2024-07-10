@@ -1,0 +1,17 @@
+#botonSubir{
+  width:25%;
+  height: 40px;
+	background: #7a1f24;
+  border-radius: 5px #7a1f24;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.campo select{
+  width:40%;
+  height: 30px;
+  font-size: 20px;
+  text-align:left;
+  vertical-align:middle;
+  border-radius: 10px;
+}

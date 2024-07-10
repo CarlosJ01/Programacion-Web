@@ -1,0 +1,68 @@
+#menu {
+  background: #c59227;
+  margin: 2% auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow: #838180 3px 3px 5px;
+  text-align: left;
+}
+
+#menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 1%;
+  margin: 0px;
+  font-size: 75%;
+  color: #000000;
+	border-radius: 10px;
+}
+.campoCentro{
+  margin: 1%;
+	padding:1%;
+	text-align: center;
+}
+
+.campoCentro input{
+		width:20%;
+    height:25px;
+    font-size: 25px;
+    text-align:left;
+  	vertical-align:middle;
+    border-radius: 10px;
+}
+
+.campoCentro select{
+  width:25%;
+  height:30px;
+  font-size: 20px;
+  text-align:left;
+  vertical-align:middle;
+  border-radius: 10px;
+}
+
+.campo input{
+		width:20%;
+    height:25px;
+    font-size: 25px;
+    text-align:left;
+  	vertical-align:middle;
+    border-radius: 10px;
+}
+
+.campo select{
+  width:20%;
+  height:30px;
+  font-size: 20px;
+  text-align:left;
+  vertical-align:middle;
+  border-radius: 10px;
+}
+
+#boton{
+  width:20%;
+  height: 40px;
+	background: #3e956e;
+  border-radius: 5px #d19a66;
+  text-align:center;
+  vertical-align:middle;
+}

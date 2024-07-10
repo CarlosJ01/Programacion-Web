@@ -1,0 +1,24 @@
+#miTabla {
+  border:  1px solid #000000;
+  width: 80%;
+}
+
+tr, td{
+  border:  1px solid #000000;
+}
+
+tr:nth-child(even){
+  background-color: #f9dc7a;
+}
+
+tr:hover{
+  background-color: #ece6e6;
+}
+
+#encabezado_tabla{
+  border: 0px solid #000000;
+  text-align: center;
+  background-color: #cd0e0e;
+  color: white;
+  font: bold 14px verdana, sans-serif;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+		<meta name="description" content="Sistema de Administracion de Creditos Complementarios - Expediente Alumno"/>
+		<meta name="keywords" content="SACC"/>
+    <link rel="stylesheet" href="CSS/estiloBase.css">
+    <link rel="stylesheet" href="CSS/estiloCreditosAlumno.css">
+    <title>S.A.C.C</title>
+  </head>
+
+  <body>
+    <div id="agrupar">
+      <header id="cabecera">
+				<h1> Sistema de Administracion de Creditos Complementarios </h1>
+			</header>
+      <p id="Titulo">Expediente Alumno</p>
+      <section id="seccion">
+
+        <p>Numero de Control: 17120151</p>
+        <p>Nombre: Carlos Jahir Castro Cazares</p>
+        <p>Carrera: ISC</p>
+        <p>E-Mail: CarlosJ.CastroC.01@gmail.com</p>
+        <p>Numero Telefono: 4431221076</p>
+        <br>
+
+        <table id="tabla">
+          <thead id="encabezado_tabla">
+            <td>Marcar</td>
+            <td id="desc">Descripcion</td>
+            <td>Fecha Inicio</td>
+            <td>Fecha Fin</td>
+            <td>Valor</td>
+            <td>Status</td>
+            <td>Evidencia</td>
+            <td>Rubrica</td>
+            <td>Comentario</td>
+          </thead>
+
+          <tr>
+            <td></td>
+            <td>Conferencias</td>
+            <td>01/01</td>
+            <td>01/02</td>
+            <td>1</td>
+            <td id="valido">Valido</td>
+            <td><a href="#">Ver Evidencia</a></td>
+            <td><a href="#">Ver Reubrica</a></td>
+            <td class="comentario">Credito valido, sin comentarios</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>Circulo de Estudio</td>
+            <td>02/04</td>
+            <td>02/05</td>
+            <td>2</td>
+            <td id="noValido">No Valido</td>
+            <td><a href="#">Ver Evidencia</a></td>
+            <td><a href="#">Ver Reubrica</a></td>
+            <td class="comentario">El credito, no es valido por que la rubrica no tiene firma</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>Tutorias</td>
+            <td>03/10</td>
+            <td>03/11</td>
+            <td>2</td>
+            <td id="espera">En Espera</td>
+            <td><a href="#">Ver Evidencia</a></td>
+            <td><a href="#">Ver Reubrica</a></td>
+            <td class="comentario">Espera a que, se revice el credito</td>
+          </tr>
+        </table>
+
+        <form name="Login" method="post" action="">
+          <div class="campo">
+            <input type="submit" name="validar" id="boton" class="formButton" value="Validar Credito">
+            <input type="submit" name="invalidar" id="boton" class="formButton" value="Invalidar Credito">
+          </div>
+
+          <br>
+
+          <div class="campo">
+            <input type="submit" name="validar" id="boton" class="formButton" value="Dar de baja Alumno">
+            <input type="submit" name="invalidar" id="boton" class="formButton" value="Dar de Alta Alumno">
+          </div>
+
+          <br>
+
+          <div class="campo">
+            <input type="submit" name="constancia" id="boton" class="formButton" value="Ver Kardex">
+            <input type="submit" name="constancia" id="boton" class="formButton" value="Ver Constancia">
+            <input type="submit" name="cerrar" id="boton" class="formButton" value="Cerrar Expediente">
+          </div>
+
+          <br>
+          
+          <div class="campo">
+            <input type="submit" name="regresar" id="boton" class="formButton" value="Regresar Administracion" formaction="BuscarAlumno.html">
+          </div>
+        </form>
+      </section>
+      <footer id="pie">
+				Instituto Tecnologico de Morelia - Ingenieria en Sistemas Computacionales - Programacion Web - Proyecto S.A.C.C &copy; 2019
+			</footer>
+    </div>
+  </body>
+
+</html>

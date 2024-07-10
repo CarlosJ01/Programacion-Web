@@ -1,0 +1,43 @@
+.tabla{
+  color: #FFFFFF;
+  margin: 0% 5% auto;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  width: 90%;
+  text-align: center;
+  background: #282c34;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+.tabla th, td{
+  padding: 15px;
+}
+.tabla thead{
+  background: #246355;
+  border-bottom: solid 7px #0f362d;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+/* columna mas grande de la tabla */
+.descripcion{
+  width: 1000px;
+  text-align: left;
+}
+
+/* Efectos al seleccionar e impares */
+.tabla tr:nth-child(even){
+  background: #2c313c;
+}
+
+.tabla tr:hover {
+  background: #369681;
+  color: #000000;
+}
+
+.tabla thead tr:hover{
+    background: #246355;
+    color: #000000;
+}

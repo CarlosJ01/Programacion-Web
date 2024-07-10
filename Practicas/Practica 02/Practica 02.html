@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Practica1 Estructura de un documento web"/>
+		<meta name="keywords" content="UML"/>
+		<!-- Formato Archivos de Estilo-->
+		<link rel="stylesheet" href="miEstilo.css">
+		<title>UML</title>
+	</head>
+			
+	<!-- Formato en Linea 
+		<p style  = "font-size: 20px"> Estilo de tamaño </p>
+		-->
+		
+	<!-- Formato Envebido 
+		<style>
+			p{
+				font-size:30px;
+			}
+			
+			footer{
+				font-size:60px;
+			}
+		</style>
+	-->
+		
+		
+	
+	<body>
+		<!-- Cabecera -->
+		<header>
+			<div align="center"> <h1> Generalidades del Lenguaje Unificado de Modelado (UML) </h1></div>
+		</header>
+		
+		<!-- Barra de Navegación -->
+		<nav>
+			<ul>
+				<a href="#Conc"><li><h2>Concepto</h2></li></a>
+				<a href="#Hist"><li><h2>Historia</h2></li></a>
+				<a href="#TpDia"><li><h2>Tipos de diagramas</h2></li></a>
+			</ul>
+		</nav>
+		
+		<table border="0">
+			<tr>
+				<td>
+					<!-- Información Principal -->
+					<section>
+						<article>
+							<a name="Conc"><h2>¿Qué es UML?</h2></a>
+							<p> El Lenguaje Unificado de Modelado (UML) fue creado para forjar un lenguaje de modelado visual común y semántica y sintácticamente rico para la arquitectura, el diseño y la implementación de sistemas de software complejos, tanto en estructura como en comportamiento. UML tiene aplicaciones más allá del desarrollo de software, p. ej., en el flujo de procesos en la fabricación.</p>
+							<p>Es comparable a los planos usados en otros campos y consiste en diferentes tipos de diagramas. En general, los diagramas UML describen los límites, la estructura y el comportamiento del sistema y los objetos que contiene.</p>
+							<p>UML no es un lenguaje de programación, pero existen herramientas que se pueden usar para generar código en diversos lenguajes usando los diagramas UML. UML guarda una relación directa con el análisis y el diseño orientados a objetos.</p>
+							<div align="center"> <img src="Imagenes/UML.png"> </div> 
+						</article>
+					</section>
+				</td>
+				
+				<!-- Barra Lateral -->
+				<td>
+					<aside>
+							<h2>Tipos de diagramas</h2>
+							<ul>
+								<a href="#DiaClas"><li>Diagrama de clases</li><br></a>
+								<a href="#DiaComp"><li>Diagrama de componentes</li><br></a>
+								<a href="#DiaDesp"><li>Diagrama de despliegue</li><br></a>
+								<a href="#DiaObje"><li>Diagrama de objetos</li><br></a>
+								<a href="#DiaPaqu"><li>Diagrama de paquetes</li><br></a>
+								<a href="#DiaEstr"><li>Diagrama de estructura compuesta</li><br></a>
+								<a href="#DiaActi"><li>Diagrama de actividades</li><br></a>
+								<a href="#DiaCasU"><li>Diagrama de casos de uso</li><br></a>
+								<a href="#DiaSecue"><li>Diagrama de secuencia</li><br></a>
+								<a href="#DiaComun"><li>Diagrama de comunicación</li><br></a>
+								<a href="#DiaTiemp"><li>Diagrama de tiempos</li><br></a>
+								<a href="#DiaGloIn"><li>Diagrama global de interacciones</li></a>
+							</ul>
+					</aside>
+				</td>
+			</tr>
+		</table>
+		
+		<!-- Información Principal -->
+		<section>
+			<article>
+				<a name="Hist"><h2>Historia</h2></a>
+				<h3>Antes de UML 1.x</h3>
+				<p>Después de que la Rational Software Corporation contratara a James Rumbaugh de General Electric, en 1994, la compañía se convirtió en la fuente de los dos esquemas de modelado orientado a objetos más populares de la época: Object-Modeling Technique (OMT) de Rumbaugh, que era mejor para análisis orientado a objetos, y el Método Booch (de Grady Booch) que era mejor para el diseño orientado a objetos. Poco después se les unió Ivar Jacobson, el creador del método de ingeniería de software orientado a objetos. Jacobson se unió a Rational, en 1995, después de que su compañía Objectory AB fuera comprada por Rational. Los tres metodologistas eran conocidos como los Tres Amigos, porque se sabía de sus constantes discusiones sobre las prácticas metodológicas. </p>
+				<p>En 1996 Rational concluyó que la abundancia de lenguajes de modelado estaba alentando la adopción de la tecnología de objetos, y para orientarse hacia un método unificado, encargaron a los Tres Amigos que desarrollaran un "lenguaje unificado de modelado" abierto. Se consultó con representantes de compañías competidoras en el área de la tecnología de objetos durante la OOPSLA '96; eligieron "cajas" para representar clases en lugar de la notación de Booch que utilizaba símbolos de "nubes". </p>
+				<p>Bajo la dirección técnica de los Tres Amigos (Rumbaugh, Jacobson y Booch) fue organizado un consorcio internacional llamado UML Partners en 1996 para completar las especificaciones del UML, y para proponerlo como una respuesta al OMG RFP. El borrador de la especificación UML 1.0 de UML Partners fue propuesto a la OMG en enero de 1997. Durante el mismo mes, la UML Partners formó una Fuerza de Tarea Semántica, encabezada por Cris Kobryn y administrada por Ed Eykholt, para finalizar las semánticas de la especificación y para integrarla con otros esfuerzos de estandarización. El resultado de este trabajo, el UML 1.1, fue presentado ante la OMG en agosto de 1997 y adoptado por la OMG en noviembre de 1997. </p>
+				
+				<h3>UML 1.x</h3>
+				<p>Como notación de modelado, la influencia de la OMT domina UML (por ejemplo, el uso de rectángulos para clases y objetos). Aunque se quitó la notación de "nubes" de Booch, sí se adoptó la capacidad de Booch para especificar detalles de diseño en los niveles inferiores. La notación de "Casos de Uso" del Objectory y la notación de componentes de Booch fueron integrados al resto de la notación, pero la integración semántica era relativamente débil en UML 1.1, y no se arregló realmente hasta la revisión mayor de UML 2.0. </p>
+				<p>Conceptos de muchos otros métodos orientados a objetos (MOO) fueron integrados superficialmente en UML con el propósito de hacerlo compatible con todos los MOO. Además, el grupo tomó en cuenta muchos otros métodos de la época, con el objetivo de asegurar amplia cobertura en el dominio de los sistemas en tiempo real. Como resultado, UML es útil en una gran variedad de problemas de ingeniería, desde procesos sencillos y aplicaciones de solamente un usuario a sistemas concurrentes y distribuidos. </p>
+				
+				<h3>UML 2.x</h3>
+				<p>UML ha madurado considerablemente desde UML 1.1, varias revisiones menores (UML 1.3, 1.4 y 1.5) han corregido defectos y errores de la primera versión de UML. A estas le ha seguido la revisión mayor UML 2.0 que fue adoptada por el OMG en 2005. </p>
+				<p>Aunque UML 2.1 nunca fue lanzado como una especificación formal, las versiones 2.1.1 y 2.1.2, aparecieron en 2007, seguidas por UML 2.2 en febrero de 2009. UML 2.3 fue lanzado oficialmente en mayo de 2010. UML 2.4.1 fue lanzado oficialmente en agosto de 2011. UML 2.5.1 fue lanzado en octubre de 2012 como una versión "En proceso" que fue formalmente liberada en junio de 2015. </p>
+				<div align="center"> <img src="Imagenes/Diagramas UML.jpg"> </div>
+			</article>
+
+			<article>
+				<a name="TpDia"><h2>Tipos de diagramas</h2></a>
+				<p>Existen dos clases principales de tipos de diagramas: diagramas estructurales y diagramas de comportamiento. Estos últimos incluyen varios que representan diferentes aspectos de las interacciones. Estos diagramas pueden ser categorizados jerárquicamente como se muestra en el siguiente diagrama de clases: </p>
+							
+				<a name="DiaClas"><h2>Diagrama de clases</h2></a>
+				<p>Los diagramas de clase son, sin duda, el tipo de diagrama UML más utilizado. Es el bloque de construcción principal de cualquier solución orientada a objetos. Muestra las clases en un sistema, atributos y operaciones de cada clase y la relación entre cada clase. En la mayoría de las herramientas de modelado, una clase tiene tres partes, nombre en la parte superior, atributos en el centro y operaciones o métodos en la parte inferior. En sistemas grandes con muchas clases relacionadas, las clases se agrupan para crear diagramas de clases. Las Diferentes relaciones entre las clases se muestran por diferentes tipos de flechas.</p>
+				<div align="center"> <img src="Imagenes/DC.png"> </div>
+				
+				<a name="DiaComp"><h2>Diagrama de componentes</h2></a>				
+				<p>Un diagrama de componentes muestra la relación estructural de los componentes de un sistema de software. Estos se utilizan principalmente cuando se trabaja con sistemas complejos que tienen muchos componentes. Los componentes se comunican entre sí mediante interfaces. Las interfaces se enlazan mediante conectores.</p>
+				<div align="center"> <img src="Imagenes/Dcompo.png"> </div>
+				
+				<a name="DiaDesp"><h2>Diagrama de despliegue</h2></a>
+				<p>Un diagrama de despliegue muestra el hardware de su sistema y el software de ese hardware. Los diagramas de implementación son útiles cuando la solución de software se despliega en varios equipos, cada uno con una configuración única.</p>
+				<div align="center"> <img src="Imagenes/DDespliege.png"> </div>
+							
+				<a name="DiaObje"><h2>Diagrama de objetos</h2></a>			
+				<p>Los diagramas de objetos, a veces denominados diagramas de instancia, son muy similares a los diagramas de clases. Al igual que los diagramas de clases, también muestran la relación entre los objetos, pero usan ejemplos del mundo real. Se utilizan para mostrar cómo se verá un sistema en un momento dado. Debido a que hay datos disponibles en los objetos, a menudo se utilizan para explicar relaciones complejas entre objetos.</p>
+				<div align="center"> <img src="Imagenes/DObje.png"> </div>
+				
+				<a name="DiaPaqu"><h2>Diagrama de paquetes</h2></a>				
+				<p>Como su nombre indica, un diagrama de paquetes muestra las dependencias entre diferentes paquetes de un sistema.</p>
+				<div align="center"> <img src="Imagenes/Dpaque.gif"> </div>
+				
+				<a name="DiaEstr"><h2>Diagrama de estructura compuesta</h2></a>
+				<p>Los diagramas de estructura compuesta se utilizan para mostrar la estructura interna de una clase.</p>
+				<div align="center"> <img src="Imagenes/DCompuesto.gif"> </div>
+							
+				<a name="DiaActi"><h2>Diagrama de actividades</h2></a>
+				<p>Los diagramas de actividad representan los flujos de trabajo de forma gráfica. Pueden utilizarse para describir el flujo de trabajo empresarial o el flujo de trabajo operativo de cualquier componente de un sistema. A veces, los diagramas de actividad se utilizan como una alternativa a los diagramas de máquina del estado.</p>
+				<div align="center"> <img src="Imagenes/DActivi.jpg"> </div>
+				
+				<a name="DiaCasU"><h2>Diagrama de casos de uso</h2></a>				
+				<p>Como el tipo de diagrama de diagramas UML más conocido, los diagramas de casos de uso ofrecen una visión general de los actores involucrados en un sistema, las diferentes funciones que necesitan esos actores y cómo interactúan estas diferentes funciones. Es un gran punto de partida para cualquier discusión del proyecto, ya que se pueden identificar fácilmente los principales actores involucrados y los principales procesos del sistema.</p>
+				<div align="center"> <img src="Imagenes/DCasos.png"> </div>
+				
+				<a name="DiaSecue"><h2>Diagrama de secuencia</h2></a>
+				<p>Los diagramas de secuencia en UML muestran cómo los objetos interactúan entre sí y el orden en que se producen esas interacciones. Es importante tener en cuenta que muestran las interacciones para un escenario en particular. Los procesos se representan verticalmente y las interacciones se muestran como flechas. Los diagramas de secuencia de UML forman parte de un modelo UML y solo existen dentro de los proyectos de modelado UML.</p>
+				<div align="center"> <img src="Imagenes/DSecu.png"> </div>
+				
+				<a name="DiaComun"><h2>Diagrama de comunicación</h2></a>
+				<p>El diagrama de comunicación se llamó diagrama de colaboración en UML 1. Es similar a los diagramas de secuencia, pero el foco está en los mensajes pasados entre objetos.</p>
+				<div align="center"> <img src="Imagenes/DComun.GIF"> </div>
+				
+				<a name="DiaTiemp"><h2>Diagrama de tiempos</h2></a>	
+				<p>Los diagramas de sincronización son muy similares a los diagramas de secuencia. Representan el comportamiento de los objetos en un marco de tiempo dado. Si es solo un objeto, el diagrama es directo, pero si hay más de un objeto involucrado, también se pueden usar para mostrar interacciones de objetos durante ese período de tiempo.</p>
+				<div align="center"> <img src="Imagenes/DTiempos.gif"> </div>
+							
+				<a name="DiaGloIn"><h2>Diagrama global de interacciones </h2></a>			
+				<p>Los diagramas generales o globales de interacción son muy similares a los diagramas de actividad. Mientras que los diagramas de actividad muestran una secuencia de procesos, los diagramas de interacción muestran una secuencia de diagramas de interacción. En términos simples, pueden llamarse una colección de diagramas de interacción y el orden en que suceden. Como se mencionó anteriormente, hay siete tipos de diagramas de interacción, por lo que cualquiera de ellos puede ser un nodo en un diagrama de vista general de interacción.</p>
+				<div align="center"> <img src="Imagenes/Dglobal.png"> </div><br><br><br>
+			</article>
+		</section>
+		
+		<!-- Institucional -->
+		<footer>
+			Instituto Tecnologico de Morelia - Ingenieria en Sistemas Computacionales - Programacion Web - Estructura de un documento web &copy; 2019
+		</footer>
+	</body>
+</html>

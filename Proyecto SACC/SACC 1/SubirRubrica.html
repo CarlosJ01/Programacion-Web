@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+		<meta name="description" content="Sistema de Administracion de Creditos Complementarios - Descargar Rubrica"/>
+		<meta name="keywords" content="SACC"/>
+    <link rel="stylesheet" href="CSS/estiloBase.css">
+    <link rel="stylesheet" href="CSS/estiloAdmin.css">
+    <title>S.A.C.C</title>
+  </head>
+
+  <body>
+    <div id="agrupar">
+      <header id="cabecera">
+				<h1> Sistema de Administracion de Creditos Complementarios </h1>
+			</header>
+
+      <nav id="menu">
+				<ul>
+          <a href="BuscarAlumno.html"><li>Buscar Alumno</li></a>
+					<a href="Alumnos.html"><li>Alumnos</li></a>
+					<a href="Fechas.html"><li>Fechas</li></a>
+          <a href="FaltaValidarCredito.html"><li>Falta Validar Credito</li></a>
+          <a href="FaltaValidarRegistro.html"><li>Falta Validar Registro</li></a>
+          <a href="SubirRubrica.html"><li id="seleccionado">Subir Rubrica</li></a>
+				</ul>
+			</nav>
+
+      <p>Descripcion</p>
+      <section id="seccion">
+        <div class="campoAbierto">
+          <input type="text" name="des" id="des"  placeholder="Descripcion"  value="Esta Rubrica necesita ser firmada, por el tutor de la actividad complementaria">
+        </div>
+
+        <div class="campo">
+          <input type="submit" name="Subir" id="boton" class="formButton" value="Subir Rubrica" autofocus>
+          <input type="submit" name="aceptar" id="boton" class="formButton" value="Aceptar" autofocus>
+        </div>
+      </section>
+
+      <footer id="pie">
+				Instituto Tecnologico de Morelia - Ingenieria en Sistemas Computacionales - Programacion Web - Proyecto S.A.C.C &copy; 2019
+			</footer>
+    </div>
+  </body>
+
+</html>

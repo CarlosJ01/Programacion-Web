@@ -1,0 +1,47 @@
+<div class="Titulo">
+  <p>Asignaciones del Usuario</p>
+</div>
+
+<div class="Texto">
+  <p>Asignaciones de activos fijos al usuario <?php echo $_SESSION["nombre"]; ?></p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Activo</th>
+      <th>Descripcion</th>
+      <th>Cantidad</th>
+      <th>Lugar</th>
+      <th>Edificio</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+      $query = 'SELECT ACTIVO.NOMBRE AS ACTIVO, DESCRIPCION, CANTIDAD, UBICACION.NOMBRE AS LUGAR, EDIFICIO, FECHA FROM ASIGNACION
+                INNER JOIN ACTIVO ON ASIGNACION.ID_ACTIVO = ACTIVO.ID_ACTIVO
+                INNER JOIN UBICACION ON ASIGNACION.ID_UBICACION = UBICACION.ID_UBICACION
+                INNER JOIN EDIFICIO ON UBICACION.ID_EDIFICIO = EDIFICIO.ID_EDIFICIO
+                WHERE CORREO = "'.$_SESSION["correo"].'" AND STATUS = 1';
+      $result=bd_consulta($query);
+      $cont = 1;
+      while ($row=mysqli_fetch_assoc($result)) {
+        $row["FECHA"] = substr($row["FECHA"],8,2)."/".substr($row["FECHA"],5,2)."/".substr($row["FECHA"],0,4);
+        ?>
+        <tr>
+          <th><?php echo $cont ?></th>
+          <td><?php echo $row["ACTIVO"] ?></td>
+          <td><?php echo $row["DESCRIPCION"] ?></td>
+          <td><?php echo $row["CANTIDAD"] ?></td>
+          <td><?php echo $row["LUGAR"] ?></td>
+          <td><?php echo $row["EDIFICIO"] ?></td>
+          <td><?php echo $row["FECHA"] ?></td>
+        </tr>
+        <?php
+        $cont++;
+      }
+    ?>
+  </tbody>
+</table>

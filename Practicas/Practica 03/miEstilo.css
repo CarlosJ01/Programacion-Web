@@ -1,0 +1,59 @@
+p{
+	font-size:30px; /*Tamaño de la letra*/
+
+}
+
+footer{
+	font-size:60px;
+}
+
+/*Todo el documento*/
+*{
+	margin: 10px 20px 30px 40px;
+	padding: 10px;
+	border: 5px solid #000000;
+}
+
+/*ID*/
+#prm_Parrafo{
+	font-size: 20px;
+}
+
+/*Clases*/
+.clase1{
+	background-color: red;
+}
+
+/*Elemento Especifico de una clase*/
+header.clase1{
+	font-size: 50px;
+}
+
+/*Seudo-Clases*/
+p:nth-child(1){
+	font-size: 5px;
+}
+
+p:nth-child(2){
+	font-size: 10px;
+}
+
+p:nth-child(3){
+	font-size: 15px;
+}
+
+p:nth-child(odd){
+	background: #999999;
+}
+
+p:nth-child(even){
+	background: #CCCCCC;
+}
+
+p:last-child{
+	background:  #c6ab10 ;
+}
+
+:not(p){
+	margin: 0px;
+}

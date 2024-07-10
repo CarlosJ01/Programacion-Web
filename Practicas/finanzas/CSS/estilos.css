@@ -1,0 +1,272 @@
+	*{
+		margin:0;
+		padding:0;
+		border: 0px solid #000000;
+		text-decoration: none;
+	}
+
+	header, section, footer, aside, nav, article, figure, figcaption{
+		display: block;
+	}
+
+	body{
+		font: 2vw verdana, sans-serif;
+		text-align:center;
+	}
+
+	h1 {
+		font-size:100%;
+	}
+
+	#principal {
+		margin:1%;
+		background:url('fondo3.png');
+		border: 1px solid #000000;
+	}
+
+	#pie {
+		display:block;
+		clear:both;
+		padding: 20px;
+		border-top: 2px solid #999999;
+		font-size: 50%;
+	}
+
+	#header_form{
+	    padding:1%;
+		font-size: 75%;
+	 }
+
+	#footer_form{
+		font-size: 60%;
+		display:block;
+		clear:both;
+	}
+	#footer_form_error{
+		font-size: 80%;
+		color:red;
+	}
+	 #menu{
+		margin: 0px 0px;
+		border: 0px solid #000000;
+		background: rgb(200,200,200,.5);
+		padding:0px;
+		text-align:left;
+	 }
+
+
+	 #menu li{
+		 display: inline-block;
+		 list-style:none;
+		 padding:5px;
+		 font-size:90%;
+	 }
+
+	 #menu ul{
+		 margin: 0px;
+	 }
+
+	#menu li:last-child{
+		 float:right;
+	 }
+	 #menu li:last-child a{
+		 	 color:red;
+	 }
+	#seccion_autenticar {
+		width: 100%;
+		height:70vh;
+	}
+
+	#miformulario{
+		margin:4% 20% 7% 15%;
+	}
+
+	.myField{
+		margin: 2%;
+		text-align:left;
+		font-size: 85%;
+	}
+	.myField label{
+		width:40%;
+		color:black;
+		text-align:right;
+		vertical-align:middle;
+		padding:1%;
+		display:inline-block;
+	}
+
+
+	.myField input:not(.formButton){
+			border: 1px solid #000000;
+			font-size: 80%;
+			padding:.5%;
+	}
+
+	.myField a{
+			font-size: 60%;
+	}
+	.myField select{
+			padding:.5%;
+			border: 1px solid #000000;
+			font-size: 70%;
+	}
+	.myField:last-child{
+		margin:1%;
+	}
+	.formButton{
+		margin: 0%;
+		padding:1%;
+		font-size: 60%;
+		width: 10%;
+	}
+	table,td {
+	   border: 1px solid black;
+	   padding:5px;
+	   font-size: 80%;
+	   text-align:left;
+	}
+
+	#tabla{
+		margin:0;
+		border-collapse: collapse;
+		width:100%;
+	 }
+	#tabla td:nth-child(1){
+		width:15%;
+	 }
+	#tabla td:nth-child(2){
+		width:20%;
+	 }
+	#tabla td:nth-child(3){
+		width:60%;
+	 }
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+	thead{
+		background-color: #999999;
+		text-align:center;
+		}
+	#seccion {
+		width: 90%;
+		padding:2%;
+	}
+	#foto{
+		border: 1px solid #ff0000;
+		display:block;
+		float:left;
+		width:30%;
+		font-size: 60%;
+	}
+	#foto img{
+		width:95%;
+	}
+	#datos{
+
+		float:left;
+		width:65%;
+	}
+
+	#cabecera{
+		width: 100%;
+		overflow: hidden;
+		line-height: 80px;
+	}
+
+	#cabecera h1{
+		display: block;
+		width: 500px;
+		float: left;
+		line-height: 80px;
+		margin: 20px;
+	}
+
+	#cabecera .usuario{
+		float: right;
+		width: 300px;
+		margin: 20px;
+		overflow: hidden;
+	}
+
+	#cabecera .usuario label{
+		display: block;
+		float: left;
+		color: red;
+		line-height: 80px;
+		margin: auto;
+	}
+
+	#cabecera .usuario .imgPerfil{
+	 	float: right;
+	 	line-height: 80px;
+	 	width: 80px;
+	 	height: 80px;
+ 	}
+	#cabecera .usuario .imgPerfil:hover {
+		-webkit-transform: rotate(360deg);
+ 		-moz-transform: rotate(360deg);
+ 		-ms-transform: rotate(360deg);
+ 		transform: rotate(360deg);
+		-webkit-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+
+	.Tabla{
+	  margin: 0% 5% auto;
+	  margin-bottom: 5%;
+	  margin-top: 1%;
+	  width: 90%;
+	  text-align: center;
+	  background: #e8e8e8;
+	  font-size: 20px;
+	  font-weight: normal;
+	  border-collapse: collapse;
+	}
+	.Tabla thead{
+	  background: #333334;
+	  font-size: 30px;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #FFFFFF;
+	}
+	.Tabla th, td{
+	  padding: 15px;
+	}
+	/* Efectos al seleccionar e impares */
+	.Tabla tr:nth-child(even){
+	  background: #f6f6f5;
+	}
+	.Tabla tbody tr:hover {
+	  background: #484848;
+	  color: #FFFFFF;
+
+	  -webkit-transition: all 500ms ease-in-out; // IE 9
+	  -moz-transition: all 500ms ease-in-out; // Firefox
+	  -ms-transition: all 500ms ease-in-out; // Safari and Chrome
+	  -o-transition: all 500ms ease-in-out; // Opera
+
+	  transform:scale(1.1);
+	  -webkit-transform:scale(1.1);
+	  -moz-transform:scale(1.1);
+	  -o-transform:scale(1.1);
+	  -ms-transform:scale(1.1);
+	}
+
+	.Boton{
+		width: 30%;
+	  text-align: center;
+	  background: #991915;
+	  border: 0;
+	  text-transform: uppercase;
+	  padding: 1em;
+	  font-size: 15px;
+	  font-weight: bold;
+	  border-radius: 10px;
+	  color: #000000;
+	}
+	.Boton:hover{
+		background: #ba1817;
+	  color: #FFFFFF;
+	  transition: all 500ms ease-out;
+	  outline: 0;
+	}
